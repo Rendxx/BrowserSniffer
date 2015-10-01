@@ -16,7 +16,7 @@ $(function () {
     var mobile = $(".item.mobile");
     var language = $(".item.language");
 
-    browser.find(".result").text($$.browser.browser);
+    browser.find(".result").text($$.browser.name);
     version.find(".result").text($$.browser.version);
     language.find(".result").text($$.browser.lan);
     os.find(".result").text($$.browser.os);

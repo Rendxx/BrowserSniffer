@@ -3,8 +3,8 @@ Browser Sniffer
 Copyright (c) 2014-2015 Dongxu Ren  http://www.rendxx.com/
 
 License: MIT (http://www.opensource.org/licenses/mit-license.php)
-Version: 3.0
-Update: 2015-09-14
+Version: 4.0
+Update: 2015-10-01
    
 Description:
    Detect infomation of browser / browser-version / operation system / browser-language
@@ -13,7 +13,7 @@ Compatibility:
     Chrome; Fire Fox; Safari; Edge; IE 9-11; IE 7,8;
 
 API:
-   $$.browser.browser
+   $$.browser.name
     - (string) Get browser name
 
    $$.browser.version
@@ -26,23 +26,23 @@ API:
     - (string) Get browser language (in lower case)
     
    $$.browser.msie(version)
-    - (bool) Get whether the browser is IE (of special version if [version] is given) or not.
-    - version including 7/8/9/10/11/Edge 
+    - (bool) Get whether the browser is IE (of special version if [version] is given).
+    - version including 7/8/9/10/11 
+    
+   $$.browser.edge()
+    - (bool) Get whether the browser is Edge.
 
    $$.browser.chrome()
-    - (bool) Get whether the browser is Chrome or not.
+    - (bool) Get whether the browser is Chrome.
 
    $$.browser.safari()
-    - (bool) Get whether the browser is Safari or not.
+    - (bool) Get whether the browser is Safari.
 
    $$.browser.firefox()
-    - (bool) Get whether the browser is Firefox or not.
-
-   $$.browser.edge()
-    - (bool) Get whether the browser is Firefox or not.
-    
+    - (bool) Get whether the browser is Firefox.
+        
    $$.browser.mobile()
-    - (bool) Get whether the browser is in a Mobile device or not.
+    - (bool) Get whether the browser is in a Mobile device.
 
    $$.browser.language.[ZH/EN/ES/FR]()
     - (bool) Get whether the browser language is Chinese/English/Spanish/French.
@@ -51,7 +51,7 @@ API:
 (function () {
     var _initBrowserSniffer = function (dataBrowser, dataOS) {
         var that = this;
-        this.browser;
+        this.name;
         this.version;
         this.os;
         this.lan;
@@ -59,23 +59,23 @@ API:
         var versionSearchString;
 
         this.msie = function (version) {
-            if (this.browser == "Explorer") {
+            if (this.name == "Explorer") {
                 if (version == null) return true;
                 return (Number(this.version) == version);
             }
             return false;
         };
         this.chrome = function () {
-            return this.browser == "Chrome";
+            return this.name == "Chrome";
         };
         this.safari = function () {
-            return this.browser == "Safari";
+            return this.name == "Safari";
         };
         this.firefox = function () {
-            return this.browser == "Firefox";
+            return this.name == "Firefox";
         };
         this.edge = function () {
-            return this.browser == "Edge";
+            return this.name == "Edge";
         };
         this.mobile = function () {
             return this.os == "Android" || this.os == "iPhone/iPod" || this.os == "iPad" || this.os == "BlackBerry" || this.os == "Windows Phone";
@@ -109,7 +109,7 @@ API:
         };
 
         var _init = function () {
-            that.browser = searchString(dataBrowser) || "Unknown browser";
+            that.name = searchString(dataBrowser) || "Unknown browser";
             that.version = searchVersion(navigator.userAgent)
                         || searchVersion(navigator.appVersion)
                         || "Unknown version";
