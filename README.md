@@ -10,13 +10,14 @@ Support: **Chrome, Fire Fox, Safari, Edge, IE 9-11, IE 7,8**.
      $$.browser.lan
      $$.browser.os
 Browser name / version / language / operation system name
-######  &nbsp;
+<div style='height:1px;'></div>
 
      $$.browser.msie(version)
 Return whether the browser is IE (of special version if **version** is given).  
 
 - **version**: including 7/8/9/10/11  
-######  &nbsp;
+
+<div style='height:1px;'></div>
 
      $$.browser.edge()
      $$.browser.chrome()
@@ -26,14 +27,14 @@ Return whether the browser is Edge  /Chrome / Safari / Firefox.
 
      $$.browser.mobile()
 Return whether the browser is in a Mobile device.
-######  &nbsp;
+<div style='height:1px;'></div>
 
      $$.browser.language.ZH()
      $$.browser.language.EN()
      $$.browser.language.ES()
      $$.browser.language.FR()
 Return whether the browser language is Chinese / English / Spanish / French.
-######  &nbsp;
+<div style='height:1px;'></div>
 
 #Code Sample
 Code in JavaScript:
