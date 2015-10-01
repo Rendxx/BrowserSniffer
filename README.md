@@ -1,6 +1,6 @@
 # BrowserSniffer
-Detect infomation of browser / browser-version / operation system / browser-language.
-Support: Chrome, Fire Fox, Safari, Edge, IE 9-11, IE 7,8.
+Detect infomation of browser / browser-version / operation system / browser-language.  
+Support: **Chrome, Fire Fox, Safari, Edge, IE 9-11, IE 7,8**.
 
 *Download: [Browser Sniffer v4.0](https://github.com/Rendxx/BrowserSniffer/releases/tag/4.0 "Download")*
 
@@ -15,7 +15,7 @@ Browser name / version / language / operation system name
      $$.browser.msie(version)
 Return whether the browser is IE (of special version if **version** is given).  
 
-- **version**: including 7/8/9/10/11 
+- **version**: including 7/8/9/10/11  
 <div style='height:1px;'></div>
 
      $$.browser.edge()
