@@ -1,7 +1,8 @@
 {
-  "name": "bower-package-name",
-  "description": "",
+  "name": "browser-sniffer",
+  "description": "Detect infomation of browser / browser-version / operation system / browser-language",
   "main": [
+    "js/BrowserSniffer.js"
   ],
   "dependencies": {
   },
@@ -9,18 +10,24 @@
     "globals"
   ],
   "keywords": [
+    "browser",
+    "sniffer",
+    "version",
+    "detect",
+    "language",
+    "os"
   ],
   "authors": [
+    "Dongxu Ren <rendxx@gmail.com> http://www.rendxx.com"
   ],
   "license": "MIT",
   "ignore": [
     "*",
-    "!js/*",
-    "!css/*"
+    "!js/*"
   ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git://github.com/Rendxx/BrowserSniffer.git"
   },
   "private": false
 }
