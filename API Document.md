@@ -1,40 +1,53 @@
 # API Document
 
-## Get Browser Information
-     $$.browser.name
-     $$.browser.version
-     $$.browser.lan
-     $$.browser.os
-Browser name / version / language / operation system name
+## Get Browser property
+#### $$.browser.name
+Get browser name.
 
-<div><br></div>
+#### $$.browser.version
+Get browser version. Only available for IE.
 
-     $$.browser.mobile()
+#### $$.browser.lan
+Get browser language.
+
+#### $$.browser.os
+Get browser operation system name.
+
+#### $$.browser.mobile()
 Return whether the browser is in a Mobile device.
 
+#### $$.browser.language.ZH()
+Return whether the browser language is Chinese.
+
+#### $$.browser.language.EN()
+Return whether the browser language is English.
+
+#### $$.browser.language.ES()
+Return whether the browser language is Spanish.
+
+#### $$.browser.language.FR()
+Return whether the browser language is French.
+
 <div><br></div>
 
-     $$.browser.language.ZH()
-     $$.browser.language.EN()
-     $$.browser.language.ES()
-     $$.browser.language.FR()
-Return whether the browser language is Chinese / English / Spanish / French.
-
-<div><br></div>
-
-## Detect Browser
-
-     $$.browser.msie(version)
+## Detect Browser 
+#### $$.browser.msie(version)
 Return whether the browser is IE (of special version if **version** is given).  
 
-- **version**: including 7/8/9/10/11  
+- **version** ```number```  
+Including 7/8/9/10/11  
 
-<div><br></div>
 
-     $$.browser.edge()
-     $$.browser.chrome()
-     $$.browser.safari()
-     $$.browser.firefox()
-Return whether the browser is Edge  /Chrome / Safari / Firefox.
+#### $$.browser.edge()
+Return whether the browser is Edge
+
+#### $$.browser.chrome()
+Return whether the browser is Chrome 
+
+#### $$.browser.safari()
+Return whether the browser is Safari 
+
+#### $$.browser.firefox()
+Return whether the browser is Firefox
 
 <div><br></div>
