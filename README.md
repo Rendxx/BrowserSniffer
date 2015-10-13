@@ -1,4 +1,4 @@
-# BrowserSniffer
+# Browser Sniffer
 Detect infomation of browser / browser-version / operation system / browser-language.  
 Support: **Chrome, Fire Fox, Safari, Edge, IE 9-11, IE 7,8**.
 
