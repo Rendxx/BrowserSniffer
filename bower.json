@@ -1,0 +1,26 @@
+{
+  "name": "bower-package-name",
+  "description": "",
+  "main": [
+  ],
+  "dependencies": {
+  },
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+  ],
+  "authors": [
+  ],
+  "license": "MIT",
+  "ignore": [
+    "*",
+    "!js/*",
+    "!css/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "private": false
+}
