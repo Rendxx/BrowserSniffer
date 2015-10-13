@@ -1,5 +1,5 @@
 {
-  "name": "Browser-Sniffer",
+  "name": "BrowserSniffer",
   "description": "Detect infomation of browser / browser-version / operation system / browser-language.",
   "main": [
     "js/BrowserSniffer.js"
