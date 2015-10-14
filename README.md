@@ -4,6 +4,19 @@ Support: **Chrome, Fire Fox, Safari, Edge, IE 9-11, IE 7,8**.
 
 *Download: [Browser Sniffer v0.4.5](https://github.com/Rendxx/BrowserSniffer/releases/tag/0.4.5 "Download")*
 
+# Install
+Download the package from bower
+```
+bower install BrowserSniffer --save
+```
+
+Including the file in your webpage
+```HTML
+<script type="text/javascript" src="/node_modules/BrowserSniffer/js/BrowserSniffer.js"></script>
+```
+
+See **Code Sample** below for more details.
+
 # API
 [API Document](https://github.com/Rendxx/BrowserSniffer/blob/master/API%20Document.md)
 
