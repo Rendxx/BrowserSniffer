@@ -28,7 +28,7 @@ Return whether the browser language is Spanish.
 #### $$.browser.language.FR()
 Return whether the browser language is French.
 
-<div><br></div>
+<h1></h1>
 
 ## Detect Browser 
 #### $$.browser.msie(version)
@@ -36,7 +36,6 @@ Return whether the browser is IE (of special version if **version** is given).
 
 - **version** ```number```  
 Including 7/8/9/10/11  
-
 
 #### $$.browser.edge()
 Return whether the browser is Edge
@@ -49,5 +48,3 @@ Return whether the browser is Safari
 
 #### $$.browser.firefox()
 Return whether the browser is Firefox
-
-<div><br></div>
