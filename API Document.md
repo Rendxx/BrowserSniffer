@@ -44,6 +44,7 @@ Return whether the browser language is Spanish.
 #### $$.browser.language.FR()
 Return whether the browser language is French.
 
+<h2></h2>
 
 <h3>&nbsp;</h3>
 
@@ -73,5 +74,3 @@ Return whether the browser is Safari
 
 #### $$.browser.firefox()
 Return whether the browser is Firefox
-
-<h2></h2>
