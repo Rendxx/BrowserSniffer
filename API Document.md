@@ -1,6 +1,7 @@
 # API Document
 
-#### $$.browser.name  
+## Get Browser property
+#### $$.browser.name
 Get browser name.  
 
 <h2></h2>
