@@ -3,10 +3,9 @@
 ## Get Browser property  
 
 #### $$.browser.name  
+Get browser name.  
 
-- Get browser name.  
-
-<div></div>
+<h3></h3>
 <h2></h2>
 
 #### $$.browser.version
