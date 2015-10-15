@@ -14,4 +14,4 @@ Get browser version. Only available for IE.
 #### $$.browser.lan
 Get browser language.
 
-<h3>&nbsp;</h3>
+<h3></h3>
