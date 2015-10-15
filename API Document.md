@@ -3,9 +3,7 @@
 ## Get Browser property  
 
 #### $$.browser.name  
-Get browser name.  
-#####
-<h2></h2>
+Get browser name. 
 
 #### $$.browser.version
 Get browser version. Only available for IE.
