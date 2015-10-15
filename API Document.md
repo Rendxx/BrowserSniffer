@@ -46,7 +46,7 @@ Return whether the browser language is French.
 
 <h2></h2>
 
-<h3>&nbsp;</h3>
+<div><br /></div>
 
 ## Detect Browser 
 #### $$.browser.msie(version)
