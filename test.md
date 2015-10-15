@@ -10,8 +10,7 @@ Get browser name.
 Get browser version. Only available for IE.
 
 <h2></h2>
+<h3></h3>
 
 #### $$.browser.lan
 Get browser language.
-
-<h3></h3>
