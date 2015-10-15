@@ -28,7 +28,7 @@ Return whether the browser language is Spanish.
 #### $$.browser.language.FR()
 Return whether the browser language is French.
 
-<h3></h3>
+<h3>&nbsp;</h3>
 
 ## Detect Browser 
 #### $$.browser.msie(version)
