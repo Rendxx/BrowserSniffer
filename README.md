@@ -4,7 +4,7 @@ Support: **Chrome, Fire Fox, Safari, Edge, IE 9-11, IE 7,8**.
 
 *Download: [Browser Sniffer v0.4.5](https://github.com/Rendxx/BrowserSniffer/releases/tag/0.4.5 "Download")*
 
-# Install
+## Install
 Download the package from bower
 ```
 bower install BrowserSniffer --save
@@ -17,7 +17,7 @@ Including the file in your webpage
 
 See **Code Sample** below for more details.
 
-# API
+## API
 [API Document](https://github.com/Rendxx/BrowserSniffer/blob/master/API%20Document.md)
 
 #Code Sample
@@ -29,5 +29,11 @@ Code in JavaScript:
     var isMobile = $$.browser.mobile(); // true if using mobile device
 ```
 
-# Compatibility
+## Compatibility
 ```Chrome``` ```Fire Fox``` ```Safari``` ```Edge``` ```IE 9-11``` ```IE 7,8```
+
+## License 
+Copyright &copy; 2015, Rendxx. (MIT License)  
+See [LICENSE][] for more info.
+
+[LICENSE]: https://github.com/Rendxx/BrowserSniffer/blob/master/LICENSE
