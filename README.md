@@ -2,6 +2,7 @@
 Detect infomation of browser / browser-version / operation system / browser-language.  
 Support: **Chrome, Fire Fox, Safari, Edge, IE 9-11, IE 7,8**.
 
+*Sample: [http://www.rendxx.com/Lib/Sample/10](http://www.rendxx.com/Lib/Sample/10 "Sample")*  
 *Download: [Browser Sniffer v0.4.5](https://github.com/Rendxx/BrowserSniffer/releases/tag/0.4.5 "Download")*
 
 ## Install
