@@ -74,3 +74,8 @@ Return whether the browser is Safari
 
 #### $$.browser.firefox()
 Return whether the browser is Firefox
+
+<h2></h2>
+
+#### $$.browser.opera()
+Return whether the browser is Opera

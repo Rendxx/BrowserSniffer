@@ -3,6 +3,7 @@ $(function () {
     var chrome = $(".item.chrome");
     var firefox = $(".item.firefox");
     var safari = $(".item.safari");
+    var opera = $(".item.opera");
     var edge = $(".item.edge");
     var ie = $(".item.ie");
     var ie7 = $(".item.ie-7");
@@ -12,7 +13,7 @@ $(function () {
     var ie11 = $(".item.ie-11");
     var os = $(".item.os");
     var browser = $(".item.browser");
-    var version = $(".item.versions");
+    var version = $(".item.version");
     var mobile = $(".item.mobile");
     var language = $(".item.language");
 
@@ -38,6 +39,12 @@ $(function () {
         safari.find(".result").text("Yes");
     } else {
         safari.find(".result").text("No");
+    }
+    if ($$.browser.opera()) {
+        opera.addClass("actived");
+        opera.find(".result").text("Yes");
+    } else {
+        opera.find(".result").text("No");
     }
     if ($$.browser.firefox()) {
         firefox.addClass("actived");

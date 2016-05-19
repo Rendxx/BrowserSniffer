@@ -31,7 +31,7 @@ Code in JavaScript:
 ```
 
 ## Compatibility
-```Chrome``` ```Fire Fox``` ```Safari``` ```Edge``` ```IE 9-11``` ```IE 7,8```
+```Chrome``` ```Fire Fox``` ```Safari``` ```Opera``` ```Edge``` ```IE 9-11``` ```IE 7,8```
 
 ## License 
 Copyright &copy; 2015, Rendxx. (MIT License)  
