@@ -3,14 +3,14 @@ Browser Sniffer
 Copyright (c) 2014-2015 Dongxu Ren  http://www.rendxx.com/
 
 License: MIT (http://www.opensource.org/licenses/mit-license.php)
-Version: 4.0
-Update: 2015-10-01
+Version: 5.1
+Update: 2016-05-19
    
 Description:
    Detect infomation of browser / browser-version / operation system / browser-language
    
 Compatibility:
-    Chrome; Fire Fox; Safari; Edge; IE 9-11; IE 7,8;
+    Chrome; Fire Fox; Safari; Opera; Edge; IE 9-11; IE 7,8;
 
 API:
    $$.browser.name
@@ -41,6 +41,9 @@ API:
    $$.browser.firefox()
     - (bool) Get whether the browser is Firefox.
         
+   $$.browser.opera()
+    - (bool) Get whether the browser is Firefox.
+        
    $$.browser.mobile()
     - (bool) Get whether the browser is in a Mobile device.
 
@@ -49,6 +52,7 @@ API:
 
 ************************************************/
 (function () {
+    "use strict";
     var _initBrowserSniffer = function (dataBrowser, dataOS) {
         var that = this;
         this.name;
@@ -59,33 +63,36 @@ API:
         var versionSearchString;
 
         this.msie = function (version) {
-            if (this.name == "Explorer") {
+            if (this.name === "Explorer") {
                 if (version == null) return true;
-                return (Number(this.version) == version);
+                return (Number(this.version) === version);
             }
             return false;
         };
         this.chrome = function () {
-            return this.name == "Chrome";
+            return this.name === "Chrome";
         };
         this.safari = function () {
-            return this.name == "Safari";
+            return this.name === "Safari";
         };
         this.firefox = function () {
-            return this.name == "Firefox";
+            return this.name === "Firefox";
         };
         this.edge = function () {
-            return this.name == "Edge";
+            return this.name === "Edge";
+        };
+        this.opera = function () {
+            return this.name === "Opera";
         };
         this.mobile = function () {
-            return this.os == "Android" || this.os == "iPhone/iPod" || this.os == "iPad" || this.os == "BlackBerry" || this.os == "Windows Phone";
+            return this.os === "Android" || this.os === "iPhone/iPod" || this.os === "iPad" || this.os === "BlackBerry" || this.os === "Windows Phone";
         };
 
         this.language = {
-            ZH: function () { return that.lan.indexOf("zh") == 0; },
-            EN: function () { return that.lan.indexOf("en") == 0; },
-            ES: function () { return that.lan.indexOf("es") == 0; },
-            FR: function () { return that.lan.indexOf("fr") == 0; }
+            ZH: function () { return that.lan.indexOf("zh") === 0; },
+            EN: function () { return that.lan.indexOf("en") === 0; },
+            ES: function () { return that.lan.indexOf("es") === 0; },
+            FR: function () { return that.lan.indexOf("fr") === 0; }
         };
 
         var searchString = function (data) {
@@ -104,8 +111,10 @@ API:
 
         var searchVersion = function (dataString) {
             var index = dataString.indexOf(versionSearchString);
-            if (index == -1) return;
-            return parseFloat(dataString.substring(index + versionSearchString.length + 1));
+            if (index === -1) return;
+            var v = (dataString.substring(index + versionSearchString.length + 1)).match(/([\d.]+)/);
+            if (v === null) return;
+            return v[1];
         };
 
         var _init = function () {
@@ -131,6 +140,12 @@ API:
             subString: "Edge\/",
             identity: "Edge"
         },
+        {       // for Opera
+            string: navigator.userAgent,
+            subString: "OPR",
+            identity: "Opera",
+            versionSearch: "OPR"
+        },
         {
             string: navigator.userAgent,
             subString: "Chrome",
@@ -148,7 +163,7 @@ API:
             identity: "Safari",
             versionSearch: "Version"
         },
-        {
+        {       // for old Opera
             prop: window.opera,
             identity: "Opera",
             versionSearch: "Version"

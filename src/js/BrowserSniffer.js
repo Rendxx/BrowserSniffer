@@ -3,14 +3,14 @@ Browser Sniffer
 Copyright (c) 2014-2015 Dongxu Ren  http://www.rendxx.com/
 
 License: MIT (http://www.opensource.org/licenses/mit-license.php)
-Version: 4.0
+Version: 5.1
 Update: 2016-05-19
    
 Description:
    Detect infomation of browser / browser-version / operation system / browser-language
    
 Compatibility:
-    Chrome; Fire Fox; Safari; Edge; IE 9-11; IE 7,8;
+    Chrome; Fire Fox; Safari; Opera; Edge; IE 9-11; IE 7,8;
 
 API:
    $$.browser.name
@@ -112,7 +112,9 @@ API:
         var searchVersion = function (dataString) {
             var index = dataString.indexOf(versionSearchString);
             if (index === -1) return;
-            return parseFloat(dataString.substring(index + versionSearchString.length + 1));
+            var v = (dataString.substring(index + versionSearchString.length + 1)).match(/([\d.]+)/);
+            if (v === null) return;
+            return v[1];
         };
 
         var _init = function () {

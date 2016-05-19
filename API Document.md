@@ -7,7 +7,7 @@ Get browser name.
 <h2></h2>
 
 #### $$.browser.version
-Get browser version. Only available for IE.
+Get browser version *string*. 
 
 <h2></h2>
 
